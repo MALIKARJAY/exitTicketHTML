@@ -49,3 +49,30 @@ body {
     display: flex;
 }
 
+#window {
+    width: 225px;
+    height: 225px;
+    border: 2px solid;
+    overflow: hidden;
+}
+
+#imgSlider img {
+    width: 300px;
+    height: 300px;
+    transform: translateX(0px);
+    animation: move 3s infinite;
+}
+
+#imgSlider {
+    display: flex;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1000px)
+    }
+}
+
